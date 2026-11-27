@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ร้านค้าออนไลน์</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>ร้านค้าออนไลน์</h1>
+      <nav aria-label="เมนูหลัก">
+        <a href="#catalog">สินค้า</a>
+        <a href="#sample-cart">ตะกร้าตัวอย่าง</a>
+      </nav>
+    </header>
+
+    <main>
+      <section aria-labelledby="catalog-title">
+        <h2 id="catalog-title">รายการสินค้า</h2>
+        <div id="catalog">
+          <article>
+            <h3>สมุดบันทึก</h3>
+            <p>สมุดบันทึกปกแข็ง ขนาด A5</p>
+            <p>ราคา 89 บาท</p>
+          </article>
+          <article>
+            <h3>ปากกา</h3>
+            <p>ปากกาเจล หมึกน้ำเงิน 0.5 มม.</p>
+            <p>ราคา 25 บาท</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="sample-cart" aria-labelledby="cart-title">
+        <h2 id="cart-title">ตะกร้าตัวอย่าง</h2>
+        <form class="interest-form">
+          <div class="field">
+            <label for="product">สินค้าที่สนใจ</label>
+            <select id="product" name="productId" required>
+              <option value="notebook">สมุดบันทึก</option>
+              <option value="pen">ปากกา</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="quantity">จำนวนที่สนใจ</label>
+            <input id="quantity" name="quantity" type="number" min="1" max="5" step="1" required />
+          </div>
+          <button type="submit">ทดลองส่งข้อมูล</button>
+          <button type="reset">คืนค่าเริ่มต้น</button>
+        </form>
+        <p><a href="index.html">เริ่มตัวอย่างใหม่</a></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 ร้านค้าออนไลน์. สงวนลิขสิทธิ์.</p>
+    </footer>
+  </body>
+</html>
